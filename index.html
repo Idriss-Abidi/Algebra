@@ -1,0 +1,340 @@
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Algebra</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+      var C='';
+      function choisir(){
+      document.getElementById('abc').innerHTML="La réponse est : "+C; 
+      }
+    </script>
+</head>
+<body >
+    <nav>
+        <label class="logo" id="algebra">ALGEBRA</label>
+        <label for="iicon" id="Icon">&#9776;</label>
+        <input type="checkbox" id="iicon"/>
+        <ul class="links">
+            <li><a href="#intro" >Introduction</a></li>
+           <li>
+              <a href="#chapitre">Chapitre</a>
+              <ul>
+                 <li><a href="#grp">Groupes</a></li>
+                 <li><a href="#sous-grp">Sous-groupes</a></li>
+                 <li><a href="#morphisme"> Morphismes de groupes</a></li>
+              </ul>
+           </li>
+           <li>
+              <a href="#QUIZ">Quiz</a>
+             
+           </li>
+           <li><a href="#source">Source</a></li>
+         
+        </ul>
+      </nav>
+     <div class="cover">
+         <img style="  width: 100%; margin-left: 0px; margin-right: 0px;
+         height: auto;" src="images/ALGEBRA.png" >
+     </div><br>
+    <div><h2 class="special-heading">Introduction</h2>
+    <p >Vocabulaire des lois de composition interne<br>
+      Dans cette section, E désigne un ensemble non vide.</p>  </div>
+<!--start intro-->
+    
+     <div class="intro">
+        <div class="container"> <div class="feat">
+         
+            <h3>Stabilité </h3>
+            <p>Une partie non vide H d’un magma (E, ∗) est dite stable pour la loi de E si,<br>
+                pour tout (x, y) ∈ H^2
+                , x ∗ y ∈ H. Dans ce cas, la restriction de la loi de E à H
+                est une loi de composition interne sur H appelée la loi induite sur H. <br>Cette
+                loi sera notée par le même symbole que celui de la loi de E.
+                
+            </p></div>
+          <div class="feat" id="intro">
+            <h3>Loi de composition interne</h3>
+            <p>Toute application ∗ de E×E dans E est
+                appelée une loi de composition interne (en bref, lci), ou simplement
+                une loi sur un ensemble E, ou encore une opération dans E.</p>
+          </div>
+          
+         
+          <div class="feat">
+            <h3>Symétrique d’un élément</h3>
+            <p>Soit (E, ∗) un magma admettant un élément neutre e.
+                Un élément x est dit symétrisable dans E,<br> s’il existe un élément y ∈ E
+                vérifiant : x ∗ y = y ∗ x = e. <br>Dans ce cas, y est appelé un symétrique de x
+                dans E.<br>
+                NB: On appelle magma tout couple (E, ∗) où ∗ est une lci sur E.
+                </p>
+          </div>
+        </div>
+      </div>
+     <div class="intro">
+        <div class="container">
+          <div class="feat">
+          
+            <h3>Associativité</h3>
+            <p>La loi ∗ est dite associative si, pour tout (x, y, z) ∈ E^3
+                ,<br>
+                (x ∗ y) ∗ z = x ∗ (y ∗ z).</p>
+          </div>
+          
+          <div class="feat">
+        
+            <h3>Commutativité </h3>
+            <p>La loi ∗ est dite commutative si, <br>pour tout (x, y) ∈
+                E^2,<br>
+                
+                 x ∗ y = y ∗ x.<br>
+                On dit aussi que le magma (E, ∗) est commutatif.<br>
+            </p>
+          </div>
+         
+          <div class="feat">
+            <h3>Elément neutre</h3>
+            <p>Soit (E, ∗) un magma. <br>On appelle élément neutre de (E, ∗) tout élément
+                e ∈ E vérifiant:<br> x ∗ e = e ∗ x = x pour tout x ∈ E.
+                </p>
+          </div>
+        </div>
+      </div>
+      <!-- End intro -->
+      <!-- Start chapitre -->
+      <div class="chapitre" id="portfolio">
+        <div class="container">
+          <h2 class="special-heading" id="chapitre">Chapitre 1</h2>
+          <p>Groupes/Sous groupes/Morphismes de Groupes</p>
+          <div class="chap-content">
+            <div class="card">
+              <img  src="images/GROUPES (3).png" class="img_name" >
+              <div class="info">
+                <h3 id="grp">Groupes</h3>
+                <p>On appelle groupe tout monoïde G tel que tout élément est inversible.<br>
+                    Si la loi de G est commutative, G est dit un groupe commutatif ou un
+                    groupe abélien.<br>
+                    Si G est fini, on dit que G est d’ordre fini et son cardinal sera noté par |G|
+                    et appelé l’ordre de G.
+                    </p>
+                  <hr><h3>Exemple:</h3> 
+                  <p class="exemple">- (R, +), (C, +), (Z, +) et (Q, +) sont des groupes abéliens.<br>
+                    - (R∗, ×), (C∗, ×) et (Q∗, ×) sont des groupes abéliens.<br>
+                    - (R, ×) n’est pas un groupe car, par exemple, 0 n’est pas inversible.<br>
+                    - (N, +) n’est pas un groupe. En effet, aucun élément non nul n’est inversible.
+                     </p>
+              </div>
+            </div>
+              <div class="card">
+              <img src="images/GROUPES (4).png" class="img_name">
+              <div class="info">
+                <h3 id="sous-grp">Sous Groupes</h3>
+                <p>Soit H une partie d’un groupe G. On dit que H est un sous-groupe de G si
+                les assertions suivantes sont vérifiées :<br>
+                1. H != ∅,<br>
+                2. H est stable pour la loi de G, et<br>
+                3. H muni de la loi induite est un groupe.<br><hr><p>Soit H une partie non vide d’un groupe G. Alors, les assertions suivantes sont
+                équivalentes :<br>
+                1. H est un sous-groupe de G.<br>
+                2. Les assertions suivantes sont vérifiées :<br>
+               (a) H est stable pour la loi de G.<br>
+               (b) H est stable par passage à l’inverse (i.e., pour tout x ∈ H, x
+               −1 ∈ H).<br>
+                3. Pour tout (x, y) ∈ H^2, xy−1 ∈ H.</p>
+            </p>
+
+                  <hr><h3>Exemple</h3> 
+                  <p class="exemple">- Pour tout groupe G d’élément neutre e, les deux ensembles G et {e} sont
+                    des sous-groupes de G, appelés sous-groupes triviaux de G.<br>
+                    - (Z, +) est un sous-groupe de (Q, +).
+                     <br>- (2Z, +) est un sous-groupe de (Z, +).
+           </div>
+              </div>
+            
+            <div class="card">
+              <img  src="images/GROUPES (2).png" class="img_name" />
+              <div class="info">
+                <h3 id="morphisme">Morphismes De Goupes</h3>
+                <p>Soient (G, ∗) et (G', T) deux groupes. On appelle morphisme de groupes ou
+                homomorphisme de groupes de G dans G'
+                toute application φ : G −→ G'
+                vérifiant :<br> pour tout (x, y) ∈ G^2
+                , φ(x ∗ y) = φ(x)T φ(y).<br>
+                Lorsque les lois de G et G'
+                sont notées multiplicativement, on écrit simplement <br>φ(xy) = φ(x)φ(y).<br>
+                <b>Notation et vocabulaire:</b> <br> Soit φ : G → G'
+                un morphisme de groupes.<br>
+                — L’ensemble φ(G) est appelé l’image de φ et il sera noté Im(φ).<br>
+                — Si G = G'
+                , alors le morphisme φ est appelé endomorphisme de G.<br>
+                — Si φ est bijectif, il sera appelé un isomorphisme de groupes. Dans ce
+                cas, on dit que G et G'
+                sont isomorphes et on écrit G ∼= G'.<br>
+                — Si G = G'
+                et φ est un isomorphisme, alors φ est appelé un automorphisme de G.
+                </p>
+                  <hr><h3>Exemple</h3> 
+                  <p class="exemple">- Soit (G, ∗) un groupe d’élément neutre e. L’application φ : x 7→ e est un
+                    endomorphisme de G.<br>
+                    - L’application exponentielle est un isomorphisme de (R, +) dans (R
+                    +∗
+                    , ×).<br>
+                    - L’application logarithme est un isomorphisme de (R
+                    +∗
+                    , ×) dans (R, +).</p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End chapitre -->
+      <!--quiz-yo-->
+      <h2 class="special-heading" id="QUIZ">Quiz</h2>
+      <div class="intro">
+          <div class="container">
+            <div class="feat" id="intro">
+              <div class="quiz">
+                  <h3 class="quest">1) La soustraction est une loi <br> de composition interne dans:</h3>
+                  <form name="Quiz">
+                          <input type="radio" id="Rps1" name="qcm1" onclick="A1='Fausse'"> Dans N<br>
+                          <input type="radio" id="Rps2" name="qcm1" onclick="A1='Juste'"> Dans Z<br><br>
+                          <input type="button" id="btn" value="Afficher la solution" style="width:150px; height:40px;"
+                              onclick="
+                               document.getElementById('abc1').innerHTML='La réponse est : '+A1+'.'; 
+                               " 
+                          ><br>
+                          <p name='affichage' id='abc1'>La réponse est : </p>
+                  
+                  <br>
+                  <h3 class="quest">2) (Z∗,×) est un groupe :</h3>
+                 
+                          <input type="radio" id="Rps1" name="qcm2" onclick="B1='Fausse'">Vrai<br>
+                          <input type="radio" id="Rps2" name="qcm2" onclick="B1='Juste'">Faux<br><br>
+                          <input type="button" id="btn" value="Afficher la solution" style="width:150px; height:40px;"
+                          onclick="
+                          document.getElementById('abc2').innerHTML='La réponse est : '+B1 +' <br>par exemple, 2 n’est pas inversible (en fait, seuls 1 et −1 sont inversibles).' 
+                          "  
+                          ><br>
+                          <p name='affichage' id='abc2'>La réponse est : </p>
+                 
+                  <br>
+                  <h3 class="quest">3) (R, ×) n’est pas un groupe : </h3>
+                
+                          <input type="radio" id="Rps1" name="qcm3" onclick="C1='Juste'">Vrai<br>
+                          <input type="radio" id="Rps2" name="qcm3" onclick="C1='Fausse'">Faux<br><br>
+                          <input type="button" id="btn" value="Afficher la solution" style="width:150px; height:40px;"
+                          onclick="document.getElementById('abc3').innerHTML='La réponse est : '+C1 +'<br>par exemple, 0 n’est pas inversible.'" 
+                          ><br>
+                          <p name='affichage' id='abc3'>La réponse est : </p><br>
+                         <input type="button" id='button' style="width:150px; height: 40px;" value="Reset" 
+                         onclick="document.getElementById('abc1').innerHTML='La réponse est :'
+                         document.getElementById('abc2').innerHTML='La réponse est :'
+                         document.getElementById('abc3').innerHTML='La réponse est :'">
+                  </form>
+              </div>
+            </div>
+            <div class="feat">
+              <div class="quiz">
+                  <h3 class="quest">4)  (2Z, +) est un sous-groupe de (Z, +) : </h3>
+                  <form name="Quiz">
+                          <input type="radio" id="Rps1" name="qcm1" onclick="A2='Fausse'"> Faux<br>
+                          <input type="radio" id="Rps2" name="qcm1" onclick="A2='Juste'"> Vrai<br><br>
+                          <input type="button" id="btn" value="Afficher la solution" style="width:150px; height:40px;"
+                              onclick="
+                               document.getElementById('xyz1').innerHTML='La réponse est : '+A2+'.'; 
+                               " 
+                          ><br>
+                          <p name='affichage' id='xyz1'>La réponse est : </p>
+                  
+                  <br><br>
+                  <h3 class="quest">5) (Z, +) n'est pas un sous-groupe de (Q, +) :</h3>
+                 
+                          <input type="radio" id="Rps1" name="qcm2" onclick="B2='Fausse'">Vrai<br>
+                          <input type="radio" id="Rps2" name="qcm2" onclick="B2='Juste'">Faux<br><br>
+                          <input type="button" id="btn" value="Afficher la solution" style="width:150px; height:40px;"
+                          onclick="
+                          document.getElementById('xyz2').innerHTML='La réponse est : '+B2"  
+                          ><br>
+                          <p name='affichage' id='xyz2'>La réponse est : </p>
+                 
+                  <br>
+                  <h3 class="quest">6) (Q, +) est un sous-groupe de (R, +) : </h3>
+                
+                          <input type="radio" id="Rps1" name="qcm3" onclick="C2='Juste'">Vrai<br>
+                          <input type="radio" id="Rps2" name="qcm3" onclick="C2='Fausse'">Faux<br><br>
+                          <input type="button" id="btn" value="Afficher la solution" style="width:150px; height:40px;"
+                          onclick="document.getElementById('xyz3').innerHTML='La réponse est : '+C2 " 
+                          ><br>
+                          <p name='affichage' id='xyz3'>La réponse est : </p><br>
+                         <input type="button" id='button' style="width:150px; height: 40px;" value="Reset" 
+                         onclick="document.getElementById('xyz1').innerHTML='La réponse est :'
+                         document.getElementById('xyz2').innerHTML='La réponse est :'
+                         document.getElementById('xyz3').innerHTML='La réponse est :'">
+                  </form>
+              </div>
+            </div>
+            <div class="feat">
+              <div class="quiz">
+                  <h3 class="quest">7) L’application identité d’un groupe G est un automorphisme de G :</h3>
+                  <form name="Quiz">
+                          <input type="radio" id="Rps1" name="qcm1" onclick="A3='Juste'"> Vrai<br>
+                          <input type="radio" id="Rps2" name="qcm1" onclick="A3='Fausse'"> Faux<br><br>
+                          <input type="button" id="btn" value="Afficher la solution" style="width:150px; height:40px;"
+                              onclick="
+                               document.getElementById('siu1').innerHTML='La réponse est : '+A3+'.'; 
+                               " 
+                          ><br>
+                          <p name='affichage' id='siu1'>La réponse est : </p>
+                  
+                  <br>
+                  <h3 class="quest">8)  L’application exponentielle n'est pas un isomorphisme de (R, +) dans (R+∗, ×) :</h3>
+                 
+                          <input type="radio" id="Rps1" name="qcm2" onclick="B3='Fausse'"> Vrai<br>
+                          <input type="radio" id="Rps2" name="qcm2" onclick="B3='Juste'"> Faux<br><br>
+                          <input type="button" id="btn" value="Afficher la solution" style="width:150px; height:40px;"
+                          onclick="
+                          document.getElementById('siu2').innerHTML='La réponse est : '+B3"  
+                          ><br>
+                          <p name='affichage' id='siu2'>La réponse est : </p>
+                 
+                  <br>
+                  <h3 class="quest">9) Soit (G, ∗) un groupe d’élément neutre e. L’application φ : x 7→ e est un : </h3>
+                
+                          <input type="radio" id="Rps1" name="qcm3" onclick="C3='Juste'"> Endomorphisme de G<br>
+                          <input type="radio" id="Rps2" name="qcm3" onclick="C3='Fausse'"> Automorphisme de G<br><br>
+                          <input type="button" id="btn" value="Afficher la solution" style="width:150px; height:40px;"
+                          onclick="document.getElementById('siu3').innerHTML='La réponse est : '+C3 " 
+                          ><br>
+                          <p name='affichage' id='siu3'>La réponse est : </p><br>
+                         <input type="button" id='button' style="width:150px; height: 40px;" value="Reset" 
+                         onclick="document.getElementById('siu1').innerHTML='La réponse est :'
+                         document.getElementById('siu2').innerHTML='La réponse est :'
+                         document.getElementById('siu3').innerHTML='La réponse est :'">
+                  </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- Start source -->
+      <div class="Source" id="SouRce">
+        <div class="container">
+          <h2 class="special-heading" id="source">Source</h2>
+          <div class="info">
+            <p class="smia">Cours d'Algebre2 - Smia - S1 - 2020/2021</p>
+            <a href="http://www.fsr.ac.ma/content/cours-tds-tps" target="_blank" class="link">Facultédescience.rabat</a>
+            <div class="social">
+                <p class="note">Pour le reste de cours, vous pouvez visiter le site de l'université.<br>
+              <a href="http://www.fsr.ac.ma/content/cours-tds-tps" target="_blank" class="fsr">Fsr.ac.ma</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End source -->
+      <!-- Start Footer -->
+      <div class="footer">&copy; 2021/22 <span>Idriss El Abidi</span></div>
+       <!-- End Footer -->
+    </body>
+</html>

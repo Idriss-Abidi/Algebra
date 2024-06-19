@@ -1,0 +1,332 @@
+html{
+    scroll-behavior:smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+  }
+  body{
+    font-family: sans-serif;
+   background-color: #1d1b31;
+   color: whitesmoke;
+    user-select: none;
+ }
+  nav .logo{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 70px;
+    padding-left: 110px;
+  }
+  nav{
+    height: 70px;
+    background: #063247;
+    box-shadow: 0 3px 15px rgba(0,0,0,.4);
+  }
+  nav ul{
+    float: right;
+    margin-right: 30px;
+    padding-right: 30px;
+  }
+  nav ul li{
+    display: inline-block;
+  }
+  nav ul li a{
+    color: white;
+    display: block;
+    padding: 0 20px;
+    line-height: 70px;
+    font-size: 20px;
+    background: #063247;
+    transition: .5s;
+  }
+ 
+  nav ul li a:hover,
+  nav ul li a.active{
+    color: #23dbdb;
+  }
+  nav ul ul{
+    position: absolute;
+    top: 85px;
+    border-top: 2.5px solid #23dbdb;
+    opacity: 0;
+    width: 93px;
+    visibility: hidden;
+  }
+  nav ul li:hover > ul{
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+    transition: .3s linear;
+  }
+  nav ul ul li{
+    width: 150px;
+    display: list-item;
+    position: relative;
+    border: 1px solid #042331;
+    border-top: none;
+  }
+  nav ul ul li a{
+    line-height: 50px;
+  }
+  nav ul ul ul{
+    border-top: none;
+  }
+  nav ul ul ul li{
+    position: relative;
+    top: -70px;
+    left: 150px;
+  }
+  nav ul ul li a i{
+    margin-left: 45px;
+  }
+  .Introduction{
+      font-size: 20px;
+      padding: 80px;
+  }
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+  /* /* S */
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  /* M */
+   @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  } 
+  /* L */
+   @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  } 
+  /* DesignPart */
+  .special-heading {
+    color: #f9e4b7;
+    font-size: 100px;
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: -3px;
+    margin: 0;
+  }
+  .special-heading + p {
+    margin: -10px 0 0 ;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+  }
+  @media (max-width: 767px) {
+    .special-heading {
+      font-size: 60px;
+    }
+    .special-heading + p {
+    margin: -10px 0px 0px ;
+    }
+  }
+  /* End  */
+  /* Start cover */
+   .cover{
+      padding-top: 3px;
+    }
+  /* End cover */
+ 
+  /* Start introduction */
+
+  .intro .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+  }
+  .intro .feat {
+    padding: 10px;
+    text-align: center;
+  }
+  .intro .feat h3 {
+    font-weight: 800;
+    margin: 30px 0;
+    color:#d7dadb;
+  }
+  .intro .feat p {
+    line-height: 1.7;
+    color: rgb(246, 246, 246);
+    font-size: 17px;
+  }
+    .intro .feat p:hover{
+    background-color: #79797949;
+  }
+  /* End introduction*/
+
+  /* Start chapitre */
+ 
+  .chapitre .chap-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 30pX;
+    margin-top: 80px;
+  }
+  /* .chapitre .chap-content .card {
+    background-color: white; */
+  /* } */
+  .chapitre .chap-content .card img {
+    width: 100%;
+    height: auto;
+  }
+  .chapitre .chap-content .card .info {
+    padding: 20px;
+    text-align: center;
+  }
+  .chapitre .chap-content .card .info h3 {
+    margin: 9px;
+    color:#d7dadb;
+  }
+  .chapitre .chap-content .card .info p {
+    color: rgb(246, 246, 246);
+    line-height: 1.6;
+    margin-bottom: 0;
+     padding: 10px 0px;
+  }
+    .chapitre .chap-content .card .info p:hover{
+    background-color: #79797949;
+  }
+  .img_name{
+    max-width: 100%;
+  }
+  /* End chapitre */
+
+ /* Start quiz */
+ /*reset button*/
+#button{
+  color: rgb(41, 0, 80);
+  font-size: 14px;
+  padding: 0px 10px;
+}
+#button:hover{
+background-color: blanchedalmond;}
+/* endreset button*/
+ /* End quiz */
+ 
+  /* Start source */
+  .Source .info {
+    text-align: center;
+  }
+
+  .Source .info .link {
+    display: block;
+    font-size: 35px;
+    font-weight: 800;
+    color: #dddddd;
+    text-decoration: none;
+  }
+  .Source .info .social {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 16px;
+  }
+
+  
+  @media (max-width: 767px) {
+    .Source .info .link {
+      font-size: 25px;
+    }
+  }
+  
+  .smia{    
+    padding-top: 0px;
+    margin-top: -17px;
+    font-size: 19px;
+    font-family: monospace;
+    font-weight: bold;}
+    .note{    
+      font-size: 28px;
+      margin-top: -12px;
+      font-family: ui-monospace;
+      border: double;
+      margin-bottom: 15px;
+      border-color: darkgray;
+      padding: 5px 20px;
+      background-color: rgb(30 22 38);
+  }
+  .fsr{
+    text-decoration: none;
+    color: #dddddd;
+    font-family: fantasy;
+    font-weight: 100;
+  }
+  /* End source */
+  /* Start Footer */
+  .footer {
+    background-color:#042331;
+    color: white;
+    padding: 30px 10px;
+    text-align: center;
+    font-size: 18px;
+  }
+  .footer span {
+    font-weight: bold;
+    color: #abb4b9;
+  }
+  /* End Footer */
+   /* Icon and nav design */
+  #Icon{
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 26px;
+    float: right;
+  }
+  #iicon {
+    display: none;
+  }
+  @media only screen and (max-width: 840px) {
+    #Icon{
+        display: block;
+        cursor: pointer;
+        padding-right: 48px;
+       font-size: 32px;
+       color: lightblue;
+    }
+    .links {
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+    .links a {
+        display: block;
+        border-bottom: 1px solid #EAEAEB;
+        margin: 0;
+    }
+    
+    #iicon:checked + .links {
+      display: grid;
+      padding-top: 2px;
+      width:100%;
+      position:relative;
+      margin-right: -30px ;
+       }
+    nav ul ul{
+      display: none;
+    }
+    #algebra{
+      font-size: 24px;
+      padding-left: 57px;
+    }
+    #btn{
+      border: whitesmoke 1px solid;
+      border-radius: 28px;
+    }
+      }
+       /* End !!*/
